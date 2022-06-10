@@ -16,6 +16,7 @@
 }
 
 .sidebar {
+    height: 100vh !important;
     grid-area: aside;
     display: grid;
     grid-template-areas:
@@ -62,6 +63,7 @@
     outline: none;
     color: #ced2d6;
     font-size: 1.25rem;
+    cursor: pointer;
 }
 
 .side-actions > p {
@@ -358,7 +360,7 @@
     z-index: 999;
     width: 300px;
     height: 100vh;
-    box-shadow: 1200px 1200px 10px 0.5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0 1200px rgba(0, 0, 0, 0.7);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -369,8 +371,17 @@
     .sidebar {
         display: none;
     }
-    .main {
-        grid-area: main;
+    .side-title {
+        padding: 0.75rem 2rem;
+    }
+    .side-actions {
+        padding: 1rem 2rem 0.75rem;
+    }
+    .offer {
+        padding: 1rem 2rem;
+    }
+    .toggle-btn {
+        padding: 1rem 2rem;
     }
     .users-container > div {
         width: 90vw;
@@ -390,34 +401,10 @@
     .users-list {
         overflow: scroll;
     }
-    /* .users-list > thead > tr > td .users-list > tbody > tr > td {
-        padding: 0 3rem !important;
+    .titles > h1 {
+        font-weight: 400;
+        font-size: 1.375rem;
     }
-
-    .users-list > thead > tr > td:nth-child(1),
-    .users-list > tbody > tr > td:nth-child(1) {
-        width: 25%;
-    }
-
-    .users-list > thead > tr > td:nth-child(2),
-    .users-list > tbody > tr > td:nth-child(2) {
-        width: 12%;
-    }
-
-    .users-list > thead > tr > td:nth-child(3),
-    .users-list > tbody > tr > td:nth-child(3) {
-        width: 18%;
-    }
-
-    .users-list > thead > tr > td:nth-child(4),
-    .users-list > tbody > tr > td:nth-child(4) {
-        width: 18%;
-    }
-
-    .users-list > thead > tr > td:nth-child(5),
-    .users-list > tbody > tr > td:nth-child(5) {
-        width: 30%;
-    } */
 }
 
 @media only screen and (max-width: 650px) {
