@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="container">
-            <aside class="sidebar">
+            <aside id="sidebar" class="sidebar">
                 <div class="side-title">
                     <a href="#" aria-label="Firebase database">
                         <img
@@ -127,7 +127,7 @@
                     <button>Upgrade</button>
                 </div>
                 <div class="toggle-btn">
-                    <button aria-label="Toggle sidebar">
+                    <button id="close-menu-btn" aria-label="Toggle sidebar">
                         <i class="fa-solid fa-angle-left"></i>
                     </button>
                 </div>
@@ -137,6 +137,9 @@
                     <button aria-label="Menu toggle">
                         <span>sandbox</span>
                         <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <button id="open-menu-btn" aria-label="Menu toggle">
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                     <button>Go to docs</button>
                     <button aria-label="Notifications">
@@ -280,4 +283,15 @@
             </main>
         </div>
     </body>
+    <script>
+        const openMenuBtn = document.getElementById("open-menu-btn");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const sidebar = document.getElementById("sidebar");
+        openMenuBtn.addEventListener("click", () => {
+            sidebar.classList.add("modal-box");
+        });
+        closeMenuBtn.addEventListener("click", () => {
+            sidebar.classList.remove("modal-box");
+        });
+    </script>
 </html>
