@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="/css/style.css" />
+        <title>Firebase</title>
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="side-title">
+                    <a href="#" aria-label="Firebase database">
+                        <img
+                            src="/images/firebase.svg"
+                            width="25"
+                            height="25"
+                            alt="Firebase"
+                        />
+                    </a>
+                    <p>Firebase</p>
+                </div>
+                <div class="side-actions">
+                    <button aria-label="Go back to home">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </button>
+                    <p>Project Overview</p>
+                    <button aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+                <div class="side-menus">
+                    <div class="side-menus-list">
+                        <div class="menu-title">Build</div>
+                        <div class="menu-items">
+                            <ul>
+                                <li>
+                                    <a class="active-menu" href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Authentication</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i> App
+                                        Check</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Firestore Database</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Realtime Database</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Extensions</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Storage</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Hosting</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Functions</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Machine Learning</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="side-menus-list">
+                        <div class="menu-title">Release & Monitor</div>
+                        <div class="menu-items">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Crashlytics</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i>
+                                        Performance</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-solid fa-users"></i> Test
+                                        Lab</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer">
+                    <div class="price">No-cost $0/month</div>
+                    <button>Upgrade</button>
+                </div>
+                <div class="toggle-btn">
+                    <button aria-label="Toggle sidebar">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                </div>
+            </aside>
+            <main class="main">
+                <div class="user-info">
+                    <button aria-label="Menu toggle">
+                        <span>sandbox</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <button>Go to docs</button>
+                    <button aria-label="Notifications">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <button aria-label="User info">Q</button>
+                </div>
+                <div class="titles">
+                    <h1>Authentication</h1>
+                    <button aria-label="Questions">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </button>
+                </div>
+                <div class="menus">
+                    <ul>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Sign-in method</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Usage</a></li>
+                    </ul>
+                </div>
+                <div class="users-container">
+                    <div>
+                        <div class="actions-container">
+                            <form method="post">
+                                <input
+                                    type="text"
+                                    name="search"
+                                    class="form-control"
+                                    placeholder="Search by email address, phone number, or user UID"
+                                    aria-label="Search Users"
+                                />
+                            </form>
+                            <button>Add User</button>
+                            <button aria-label="Refresh users list">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </button>
+                            <button aria-label="Action menu">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                        <table class="users-list">
+                            <thead>
+                                <tr>
+                                    <td>Identifier</td>
+                                    <td>Providers</td>
+                                    <td>
+                                        Created
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </td>
+                                    <td>Signed In</td>
+                                    <td>User UID</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                                <tr>
+                                    <td>demo@gmail.com</td>
+                                    <td>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </td>
+                                    <td>June 18, 2021</td>
+                                    <td>June 19, 2021</td>
+                                    <td>2$na13@939n@9373!!!</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
