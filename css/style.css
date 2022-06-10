@@ -311,6 +311,11 @@
     padding: 0 0.875rem;
 }
 
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .users-list {
     border-collapse: collapse;
     width: 100%;
@@ -399,7 +404,7 @@
 
 @media only screen and (max-width: 768px) {
     .users-list {
-        overflow: scroll;
+        width: 700px;
     }
     .titles > h1 {
         font-weight: 400;
